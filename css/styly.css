@@ -1,5 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(236, 244, 248);
+    position: relative;
+    background-color: white;
+    min-height: 100vh;
+    color: #000;
 }
 
 h1, h2, h3 {
@@ -25,6 +34,13 @@ main {
     border: 5px solid rgb(52, 152, 219);
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+        max-width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 .button {
@@ -89,4 +105,33 @@ mark {
     padding: 2px 4px;
     border-radius: 3px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+.resized-image {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+body {
+    background: 
+        linear-gradient(to right, 
+            rgba(255, 255, 255, 1) 1%, /* Bílé pruhy vlevo */
+            rgba(255, 255, 255, 0) 5%, /* Přechod do průhledna */
+            rgba(255, 255, 255, 0) 95%, /* Průhledná část uprostřed */
+            rgba(255, 255, 255, 1) 99% /* Bílé pruhy vpravo */
+        ), 
+        url('../img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
