@@ -1,23 +1,92 @@
-body
-{
-    background-color: rgb(212, 212, 212);
+body {
+    background-color: rgb(236, 244, 248);
 }
 
 h1, h2, h3 {
-    background-color: rgb(155, 197, 197);
-    color: rgb(0, 0, 0);
+    background-color: rgb(174, 214, 241);
+    color: rgb(44, 62, 80);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-header{
-    background-color: rgb(150, 236, 236);
+header {
+    background-color: rgb(52, 152, 219);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-main{
+main {
     max-width: 1200px;
     margin: auto;
-    background-color: aliceblue;
+    background-color: white;
     padding: 20px;
-    border: 5px solid rgb(172, 191, 216);
+    border: 5px solid rgb(52, 152, 219);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    background-color: rgb(52, 152, 219);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgb(41, 128, 185);
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: rgb(41, 128, 185);
+    transform: translateY(-2px);
+}
+
+.button:active {
+    background-color: rgb(31, 97, 141);
+    transform: translateY(0);
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(174, 214, 241);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.topnav .button {
+    background-color: rgb(52, 152, 219);
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid rgb(41, 128, 185);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.topnav .button:hover {
+    background-color: rgb(41, 128, 185);
+}
+
+.topnav .button:active {
+    background-color: rgb(31, 97, 141);
+}
+
+mark {
+    background-color: rgb(52, 152, 219);
+    color: white;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
