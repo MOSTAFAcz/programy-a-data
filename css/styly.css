@@ -109,12 +109,15 @@ mark {
 
 footer {
     background-color: white;
-    padding: 20px;
+    padding: 40px 20px;
     position: relative;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #ccc;
+    min-height: 350px;
 }
+
 .resized-image {
     max-width: 80%;
     height: auto;
@@ -124,10 +127,10 @@ footer {
 body {
     background: 
         linear-gradient(to right, 
-            rgba(255, 255, 255, 1) 1%, /* Bílé pruhy vlevo */
-            rgba(255, 255, 255, 0) 5%, /* Přechod do průhledna */
-            rgba(255, 255, 255, 0) 95%, /* Průhledná část uprostřed */
-            rgba(255, 255, 255, 1) 99% /* Bílé pruhy vpravo */
+            rgba(255, 255, 255, 1) 1%,
+            rgba(255, 255, 255, 0) 5%,
+            rgba(255, 255, 255, 0) 95%,
+            rgba(255, 255, 255, 1) 99%
         ), 
         url('../img/back.jpg');
     background-size: cover;
