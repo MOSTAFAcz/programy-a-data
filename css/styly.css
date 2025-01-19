@@ -6,9 +6,20 @@
 
 body {
     position: relative;
-    background-color: white;
     min-height: 100vh;
     color: #000;
+    background: 
+        linear-gradient(to right, 
+            rgba(255, 255, 255, 1) 1%,
+            rgba(255, 255, 255, 0) 5%,
+            rgba(255, 255, 255, 0) 95%,
+            rgba(255, 255, 255, 1) 99%
+        ), 
+        url('../img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1, h2, h3 {
@@ -16,6 +27,7 @@ h1, h2, h3 {
     color: rgb(44, 62, 80);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 header {
@@ -27,20 +39,13 @@ header {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 60%;
     margin: auto;
     background-color: white;
     padding: 20px;
     border: 5px solid rgb(52, 152, 219);
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-
-        max-width: 60%;
-    margin: auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
 }
 
 .button {
@@ -75,6 +80,7 @@ main {
     background-color: rgb(174, 214, 241);
     padding: 10px;
     border-radius: 5px;
+    position: relative;
 }
 
 .topnav .button {
@@ -124,17 +130,69 @@ footer {
     display: block;
     margin: auto;
 }
-body {
+
+#toggle-mode {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.dark-mode {
     background: 
         linear-gradient(to right, 
-            rgba(255, 255, 255, 1) 1%,
-            rgba(255, 255, 255, 0) 5%,
-            rgba(255, 255, 255, 0) 95%,
-            rgba(255, 255, 255, 1) 99%
-        ), 
+            rgba(34, 34, 34, 1) 1%,
+            rgba(34, 34, 34, 0) 5%,
+            rgba(34, 34, 34, 0) 95%,
+            rgba(34, 34, 34, 1) 99%
+        ),
         url('../img/back.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    color: white;
+}
+
+.dark-mode main {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: rgb(41, 128, 185);
+}
+
+.dark-mode .topnav {
+    background-color: rgb(52, 152, 219);
+}
+
+.dark-mode .button {
+    background-color: rgb(44, 62, 80);
+    border: 2px solid rgb(61, 145, 218);
+    color: white;
+}
+
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    background-color: rgb(34, 54, 84);
+    color: white;
+}
+
+.dark-mode p {
+    color: rgb(255, 255, 255);
+}
+.dark-mode footer {
+    background-color: #525252;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(255, 255, 255, 0.1);
+    border-top: 2px solid #555;
+    min-height: 350px;
 }
