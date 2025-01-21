@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-Instalace programů</title>
+    <link rel="stylesheet" href="../css/styly.css">
+    <button id="toggle-mode" class="button">Switch to Night Mode</button>
+</head>
+
+<body>
+    <header>
+        <h1>Instalace programů</h1>
+    </header>
+    <nav class="topnav">
+        <a class="button" href="../index.html">Úvodní stránka</a>
+        <a class="button" href="../01/index.html">Programové a datové soubory</a>
+        <a class="button" href="../02/index.html">Operační systémy</a>
+        <a class="button" href="../03/index.html">Ovladače firmware a utility</a>
+        <a class="button" href="../04/index.html">Aplikační software</a>
+        <a class="button" href="../05/index.html">Instalace programů</a>
+        <a class="button" href="../06/index.html">Softwarové licence</a>
+    </nav>
+    <script src="../scripts/script.js"></script>
+    <main>
+        <h2><strong>Instalace programu</strong></h2>
+        <p>
+            Program, který si koupíme, dostaneme na CD/DVD disku, nebo si ho stáhneme z Internetu. 
+            Po vložení instalačního CD/DVD disku se většinou okamžitě spustí instalační program 
+            (díky souboru autorun.inf), v případě softwaru staženého z Internetu musíme instalační 
+            program spustit sami (ve Windows nejčastěji poklepáním na soubory install.exe či 
+            setup.exe). Průvodce instalací (wizard) si často vyžádá sériové číslo a souhlas s 
+            licenčními podmínkami, zeptá se, kam (do jaké složky na disku) se má program uložit a 
+            kam se má umístit zástupce programu, případně žádá další informace. Potom instalační 
+            program nahraje všechny soubory, ze kterých se program skládá, na pevný disk počítače, 
+            provede nutnou konfiguraci (v systémovém registru Windows, konfiguračních souborech) 
+            a nakonec vytvoří zástupce programu pro jeho snadné spuštění. K instalaci většiny 
+            programů je nutné mít práva správce.
+        </p>
+        
+        <h2><strong>Odinstalace programu</strong></h2>
+        <p>
+            Úplné odebrání programu bývá paradoxně často složitější, zvláště v systémech Windows. 
+            Při instalaci si program nahraje své komponenty do mnoha složek včetně systémových, 
+            sdílí některé soubory s jinými programy (dynamické knihovny DLL), vytvoří záznamy v 
+            tzv. registru, při svém běhu vytváří pomocné soubory. Program zajišťující odinstalování 
+            aplikace často neví přesně, kde všude jsou programové soubory uložené a všechny je 
+            nesmaže. V řadě případů tak dochází k hromadění zbytečných a nepoužívaných souborů. 
+            Pro jejich odstranění lze používat některé speciální utility – např. RegCleaner 
+            (program pro čištění registrů). Při podobných operacích je však nutné postupovat velmi 
+            obezřetně, aby nedošlo k odstranění některé důležité součásti systému nebo používaného 
+            programu! V linuxových systémech je lépe vyřešeno oddělení systémových a uživatelských 
+            souborů, úplné odstranění nepotřebného programu je proto pravděpodobnější.
+        </p>
+        
+        <h2><strong>Kompatibilita a platforma</strong></h2>
+        <p>
+            Mnoho programů, zvlášť z oblasti svobodného software, má proto verze určené pro 
+            několik operačních systémů – jsou multiplatformní. Problémy se spuštěním programu 
+            však mohou nastat i na jedné platformě v souvislosti s různými verzemi OS i rozdíly 
+            mezi 32bitovými a 64bitovými systémy. Při pořizování programu si proto vždy musíme 
+            ověřit, zda je kompatibilní s námi používaným operačním systémem.
+        </p>
+        
+        <h2><strong>Lokalizace</strong></h2>
+        <p>
+            Lokalizace je překlad programu, v našem případě do češtiny. Většina významných 
+            softwarových firem pochází z anglicky mluvících zemí a originály programů tedy 
+            existují v angličtině. Dnes je však zcela běžné, že tyto firmy mají místní zastoupení, 
+            která zajišťují prodej programů, ale také je před prodejem lokalizují - převedou do 
+            češtiny.
+        </p>
+        
+        <h2><strong>Verze programů</strong></h2>
+        <p>
+            U počítačových programů je důležitá jeho verze, která se označuje číslem za názvem 
+            programu. Nový program může být například označen jako verze 1.0. Některé dodatečně 
+            zjištěné dílčí nedostatky nebo bezpečnostní problémy řeší aktualizace programu. 
+            Aktualizace jsou zakázníkům, kteří si zakoupili určitou verzi programu, obvykle 
+            poskytovány bezplatně. Povýšení na novou verzi (např. 2.0), upgrade, přináší 
+            významnější změny ve vývoji programu a v případě komerčního software je třeba vyšší 
+            verzi znovu zaplatit.
+        </p>
+        
+        <h2><strong>Registrace programu</strong></h2>
+        <p>
+            Registrace je zaevidování jeho uživatele do databáze výrobce programu. Registrace 
+            je nepovinná a přináší většinou několik výhod, jako například nárok na upgrade 
+            programu za sníženou cenu a informace o nových verzích programu.
+        </p>
+    </main>
+    
+    <footer>
+        <hr>
+        <p>&copy;  &#x263A; 2025 - <b>Jára Cimrman, <i>IT1</i></b> </p>
+        <p><img src="../img/skola-logo.png" style="max-width: 80%;" alt="Logo školy"> </p> 
+    </footer>
+</body>
+
+</html>
