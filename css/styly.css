@@ -197,3 +197,32 @@ footer {
     border-top: 2px solid #555;
     min-height: 350px;
 }
+
+.contact-info {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    position: relative;
+    top: -5px;
+}
+
+.dark-mode .icon {
+    content: url('../img/PhoneWhite.png');
+}
+
+.dark-mode .contact-icon img[alt="Email icon"] {
+    content: url('../img/EmailWhite.png');
+}
