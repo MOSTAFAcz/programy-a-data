@@ -4,24 +4,10 @@
     box-sizing: border-box;
 }
 
-.dm-serif-text-regular {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .dm-serif-text-regular-italic {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  
-
 body {
     position: relative;
     min-height: 100vh;
-    color: #000;
+    color:#000;
     background: 
         linear-gradient(to right, 
             rgba(255, 255, 255, 1) 1%,
@@ -53,7 +39,7 @@ header {
     border-radius: 5px;
 }
 
-.main {
+main {
     max-width: 60%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.8);
@@ -61,11 +47,6 @@ header {
     border: 5px solid rgb(52, 152, 219);
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.ass{
-    max-width: 60%;
-    margin: auto;
 }
 
 .button {
@@ -244,14 +225,4 @@ footer {
 
 .dark-mode .contact-icon img[alt="Email icon"] {
     content: url('../img/EmailWhite.png');
-}
-
-.p{
-    font-size: 155px;
-    font-stretch: extra-condensed;
-    font-family:  "DM Serif Text", serif;
-    text-align: center;
-    margin-bottom: 240px;
-    margin-top: 230px;
-    color:white;
 }
