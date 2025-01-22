@@ -39,7 +39,7 @@ header {
     border-radius: 5px;
 }
 
-main {
+.main {
     max-width: 60%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.8);
@@ -47,6 +47,11 @@ main {
     border: 5px solid rgb(52, 152, 219);
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ass{
+    max-width: 60%;
+    margin: auto;
 }
 
 .button {
@@ -139,65 +144,6 @@ footer {
     padding: 5px 10px;
     font-size: 12px;
 }
-
-.dark-mode {
-    background: 
-        linear-gradient(to right, 
-            rgba(34, 34, 34, 1) 1%,
-            rgba(34, 34, 34, 0) 5%,
-            rgba(34, 34, 34, 0) 95%,
-            rgba(34, 34, 34, 1) 99%
-        ),
-        url('../img/back.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    color: white;
-}
-
-.dark-mode main {
-    background-color: #333;
-    color: white;
-}
-
-.dark-mode header {
-    background-color: rgb(41, 128, 185);
-}
-
-.dark-mode .topnav {
-    background-color: rgb(52, 152, 219);
-}
-
-.dark-mode .button {
-    background-color: rgb(44, 62, 80);
-    border: 2px solid rgb(61, 145, 218);
-    color: white;
-}
-
-
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3 {
-    background-color: rgb(34, 54, 84);
-    color: white;
-}
-
-.dark-mode p {
-    color: rgb(255, 255, 255);
-}
-.dark-mode footer {
-    background-color: rgb(68, 89, 121);
-    color: white;
-    padding: 40px 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -1px 5px rgba(255, 255, 255, 0.1);
-    border-top: 2px solid #555;
-    min-height: 350px;
-}
-
 .contact-info {
     text-align: center;
     font-size: 18px;
@@ -217,6 +163,90 @@ footer {
     vertical-align: middle;
     position: relative;
     top: -5px;
+}
+.p{
+    font-size: 155px;
+    font-stretch: extra-condensed;
+    font-family:  "DM Serif Text", serif;
+    text-align: center;
+    margin-bottom: 240px;
+    margin-top: 230px;
+    color:white;
+}
+
+
+.dark-mode body {
+    background: linear-gradient(to right, 
+            rgba(34, 34, 34, 1) 1%,
+            rgba(34, 34, 34, 0) 5%,
+            rgba(34, 34, 34, 0) 95%,
+            rgba(34, 34, 34, 1) 99%
+        ), 
+        url('../img/back-dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(220, 220, 220);
+}
+
+.dark-mode header {
+    background-color: rgb(41, 128, 185);
+    color: rgb(200, 200, 200);
+}
+
+.dark-mode .topnav {
+    background-color: rgb(52, 73, 94);
+}
+
+.dark-mode .button {
+    background-color: rgb(44, 62, 80);
+    border: 2px solid rgb(61, 145, 218);
+    color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    background-color: rgb(34, 54, 84);
+    color: white;
+}
+
+.dark-mode main {
+    background-color: rgba(34, 34, 34, 0.9);
+    border: 5px solid rgb(61, 145, 218);
+    color: rgb(220, 220, 220);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode p {
+    color: rgb(200, 200, 200);
+}
+
+.dark-mode mark {
+    background-color: rgb(61, 145, 218);
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode footer {
+    background-color: rgb(34, 34, 34);
+    color: rgb(200, 200, 200);
+    border-top: 2px solid rgb(61, 145, 218);
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .resized-image {
+    filter: brightness(0.8);
+}
+
+.dark-mode #toggle-mode {
+    background-color: rgb(61, 145, 218);
+    color: white;
+    border: 2px solid rgb(41, 128, 185);
+}
+
+.dark-mode .contact-info {
+    color: rgb(220, 220, 220);
 }
 
 .dark-mode .icon {
